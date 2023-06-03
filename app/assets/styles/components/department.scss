@@ -1,0 +1,45 @@
+.department {
+  margin-top: 20px;
+
+  &__item {
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #f5f8fa;
+  }
+
+  &__image {
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__body {
+    padding: 23px 19px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__address {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    color: $blue;
+  }
+
+  @include breakpoint(large down) {
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+}

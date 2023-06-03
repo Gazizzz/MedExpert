@@ -1,0 +1,50 @@
+.slick-dots {
+  position: absolute;
+  bottom: 60px;
+  left: 0.625rem;
+  margin: 0 -3px;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+  }
+
+  button {
+    width: 14px;
+    height: 14px;
+    background-color: $gray-ae;
+    border-radius: 14px;
+    text-indent: -9999px;
+  }
+
+  .slick-active button {
+    background-color: $blue;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    left: 0.9375rem;
+    bottom: 89px;
+  }
+}
+
+.slick-arrow {
+  fill: $gray-ae;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &__icon {
+    display: block;
+  }
+}
+
+.slick-prev {
+  margin-right: 10px;
+}
+
+.slick-next .slick-arrow__icon {
+  transform: rotateZ(180deg);
+}

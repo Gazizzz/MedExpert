@@ -1,0 +1,55 @@
+extends base
+
+block content
+  section.section.section_white.section_inner
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li Контакты
+    .row
+      .column
+        h1 Контакты
+        ul.contacts__buttons.button-group(data-tabs id="contacts-tabs" data-link-class='contacts__buttons-item' data-panel-class="contacts__body")
+          li.contacts__buttons-item.is-active
+            a.contacts__button.button(href="#contacts_panel1" aria-selected="true") Поликлиника Сибгата Хакима, 52
+          li.contacts__buttons-item
+            a.contacts__button.button(href="#contacts_panel2") Поликлиника Муштари, 12А
+          li.contacts__buttons-item
+            a.contacts__button.button(href="#contacts_panel3") Детская поликлиника Сибгата Хакима, 50
+    - var maps = ['https://yandex.ru/map-widget/v1/?um=constructor%3A16b3a30ce2184dde47d5b71d55bc559c7e6278bc22e07da232ed5e36186bbf1f&source=constructor','https://yandex.ru/map-widget/v1/?um=constructor%3AdYGVG-mT4dTkq-5ahkKNy6VRTWjoYbTE&amp;source=constructo', 'https://yandex.ru/map-widget/v1/?um=constructor%3A16b3a30ce2184dde47d5b71d55bc559c7e6278bc22e07da232ed5e36186bbf1f&source=constructor']
+    div(data-tabs-content="contacts-tabs")
+      each val, index in [1,2,3]
+        .contacts__body(class=`${val === 1 ? 'is-active': ''}` id=`contacts_panel${val}`)
+          .contacts__map
+            iframe(src=`${maps[index]}`, width='100%', height='400', frameborder='0')
+          .row
+            .column
+              .contacts__info
+                .contacts__info-item
+                  .contacts__icon-container
+                    img.contacts__icon(src="https://gazizzz.github.io/MedExpert/images/map.png")
+                  span.contacts__info-text ##{val} г. Казань, ул. Сибгата Хакима, 52
+                .contacts__info-item
+                  .contacts__icon-container
+                    img.contacts__icon(src="https://gazizzz.github.io/MedExpert/images/email.png")
+                  span.contacts__info-text ##{val} info@medexpert-kazan.ru
+                .contacts__info-item
+                  .contacts__icon-container
+                    img.contacts__icon(src="https://gazizzz.github.io/MedExpert/images/phone.png")
+                  a.contacts__info-text.contacts__info-tel(href="tel:+78435903333") +7(843) 590-33-33
+                .contacts__info-item.contacts__info-item_time
+                  .contacts__icon-container
+                    img.contacts__icon(src="https://gazizzz.github.io/MedExpert/images/clock.png")
+                  ul.contacts__info-list.no-bullet
+                    li Рабочие дни: 08:00 – 20:00
+                    li Суббота: 08:00 – 17:00
+                    li Воскресенье — выходной
+    .row
+      .column
+        h1 Мы в соц. сетях
+        a.icon.icon_social.icon_social_large.icon_vk(href="/") Vkontakte
+        a.icon.icon_social.icon_social_large.icon_instagram(href="/") Instagram
+
+  include partials/appointment

@@ -1,0 +1,40 @@
+extends base
+
+block content
+  section.section.section_white.section_inner
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li
+            a(href="/") О клинике
+          li Врачи
+    .row
+      .column
+        h1 Врачи
+    .row
+      .large-6.column
+        label
+          .form-label Медицинский центр
+          select
+            option(value="") Поликлиника Муштари, 12А
+            option(value="") Поликлиника Муштари, 11А
+      .large-6.column
+        label
+          .form-label Направление
+          select
+            option(value="") Все направления
+            option(value="") Все направления
+    .row
+      .column
+        include partials/doctors
+        .row.employees__list.js-doctors-carousel
+          each i in [1,2,3,4]
+            each val in [1,2,3,4]
+              +doctor-item(val)
+    .row
+      .column.text-center.u-mt20
+        button.u-plain.button.hollow Показать еще
+
+  include partials/appointment

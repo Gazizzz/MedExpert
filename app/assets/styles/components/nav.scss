@@ -1,0 +1,38 @@
+.nav {
+  background: $white;
+  border-top: 1px solid $gray-e0;
+  border-bottom: 1px solid $gray-e0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+    border: 0;
+  }
+
+  @include breakpoint (medium down) {
+    &__list {
+      display: block;
+    }
+
+    &__icon {
+      display: none;
+    }
+
+    &__link,
+    &__action-link {
+      display: block;
+      padding: 5px 0;
+      font-weight: 400;
+      font-size: 16px;
+      border: 0;
+    }
+  }
+}

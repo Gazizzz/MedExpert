@@ -1,0 +1,69 @@
+extends base
+
+block content
+  - var days = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс']
+  - var times = ['8 00 – 15 00','8 00 – 15 00','8 00 – 15 00','8 00 – 15 00','8 00 – 15 00','—','—']
+  section.section.section_white.section_inner.schedule
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li Расписание врачей
+    .row
+      .column
+        h1 Расписание врачей
+    .row
+      .column
+        ul.schedule__buttons.button-group(data-tabs id="schedule-tabs" data-link-class='schedule__buttons-item' data-panel-class="schedule__body")
+          li.schedule__buttons-item.is-active
+            a.schedule__button.button(href="#schedule_panel1" aria-selected="true") Поликлиника Сибгата Хакима, 52
+          li.schedule__buttons-item
+            a.schedule__button.button(href="#schedule_panel2") Поликлиника Муштари, 12А
+          li.schedule__buttons-item
+            a.schedule__button.button(href="#schedule_panel3") Детская поликлиника Сибгата Хакима, 50
+    div(data-tabs-content="schedule-tabs")
+      each val, index in [1,2,3]
+        .schedule__body(class=`${val === 1 ? 'is-active': ''}` id=`schedule_panel${val}`)
+          .row
+            .column
+              each val in [1,2]
+                .schedule__table
+                  h1.page__inner-title Врач клинической лабораторной диагностики #{index}
+                  table
+                    thead
+                      tr
+                        th
+                        each day in days
+                          th.schedule__day= day
+                    tbody
+                      tr
+                        td
+                          a(href="") Константинопольский А.Л.
+                        each time, index in times
+                          td.schedule__day
+                            strong.schedule__day-label
+                              = days[index]
+                              | :
+                            = time
+                .schedule__table
+                  h1 Врач общей практики (семейный врач) #{index}
+                  table
+                    thead
+                      tr
+                        th
+                        each day in days
+                          th.schedule__day= day
+                    tbody
+                      each val in [1,2,3]
+                        tr
+                          td
+                            a(href="") Константинопольский А.Л.
+                          each time, index in times
+                            td.schedule__day
+                              strong.schedule__day-label
+                                = days[index]
+                                | :
+                              = time
+
+  include partials/appointment

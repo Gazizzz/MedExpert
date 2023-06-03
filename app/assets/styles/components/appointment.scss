@@ -1,0 +1,27 @@
+.appointment {
+  padding: 30px 25px;
+  text-align: center;
+  background: $gray-f2;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background: $white;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $black;
+  }
+
+  &__button {
+    margin: 26px 0 0;
+  }
+}

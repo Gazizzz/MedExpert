@@ -1,0 +1,38 @@
+.schedule {
+  &__body {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__table {
+    margin-bottom: 40px;
+  }
+
+  &__day {
+    text-align: center;
+  }
+
+  &__day-label {
+    margin-right: 15px;
+  }
+
+  @include breakpoint(medium up) {
+    &__day-label {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    thead {
+      display: none;
+    }
+
+    td {
+      display: block;
+      text-align: left;
+    }
+  }
+}

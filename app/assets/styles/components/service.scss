@@ -1,0 +1,99 @@
+.service {
+  &__header {
+    display: flex;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__header-item {
+    width: 31%;
+  }
+
+  &__header-item:nth-child(1) &__header-text {
+    z-index: 3;
+  }
+
+  &__header-item:nth-child(2) &__header-text {
+    z-index: 2;
+  }
+
+  &__header-item:nth-child(3) &__header-text {
+    z-index: 1;
+  }
+
+  &__header-text {
+    display: block;
+    height: 100%;
+    position: relative;
+    padding: 22px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 7px 10px rgba(224, 224, 224, 0.46);
+    background: $white;
+    border: 0;
+  }
+
+  &__header-item.is-active &__header-text {
+    background: $blue-light;
+    color: $white;
+    box-shadow: 6px 3px 10px rgba(210, 210, 210, 0.51);
+    z-index: 4 !important;
+  }
+
+  &__header-icon {
+    margin-bottom: 18px;
+  }
+
+  &__line {
+    position: relative;
+    height: 5px;
+    border-radius: 0 3px 3px;
+    background: $blue-light;
+    z-index: 5;
+  }
+
+  &__list {
+    display: none;
+    margin: 8px 0 0;
+    list-style: none;
+  }
+
+  &__list.is-active {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+    padding: 22px;
+    margin-bottom: 5px;
+    background: $white;
+    text-align: left;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(224, 224, 224, 0.46);
+
+    &:hover {
+      background-image: url("https://gazizzz.github.io/MedExpert/images/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 93% 50%;
+      box-shadow: 0 5px 49px $gray-c9;
+    }
+  }
+
+  @include breakpoint(medium only) {
+    &__header-item {
+      width: 33.333%;
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__header {
+      flex-wrap: wrap;
+    }
+
+    &__header-item {
+      width: 100%;
+    }
+  }
+}

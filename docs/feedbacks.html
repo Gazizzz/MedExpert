@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gulp Project Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <div class="header-info">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet hide-for-small-only">
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Муштари, 12А</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                > Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column header-info__right">
+          <div class="header-info__social">
+            <a class="header-info__tel link-tel" href="tel:+78435903333"
+              >+7(843) 590-33-33</a
+            >
+            <div class="header-info__social-icons">
+              <a class="icon icon_social icon_vk" href="/">Vkontakte</a
+              ><a class="icon icon_social icon_instagram" href="/">Instagram</a>
+            </div>
+          </div>
+          <div class="header-info__time">
+            Сегодня работаем до<strong> 20:00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="row">
+        <div class="column header-nav__top">
+          <a class="header-nav__logo" href="/"
+            ><img
+              src="https://gazizzz.github.io/MedExpert/images/logo.png"
+              alt="Медэксперт"
+          /></a>
+          <ul class="header-nav__actions no-bullet show-for-large">
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="row">
+        <div class="column">
+          <div
+            class="title-bar"
+            data-responsive-toggle="nav-menu"
+            data-hide-for="large"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="nav-menu"
+            ></button>
+          </div>
+          <ul class="nav__list no-bullet" id="nav-menu">
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="/">Услуги и цены</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 1</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 2</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 3</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 4</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 5</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">О клинике</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Расписание врачей</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Акции и Новости</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="/">Отзывы</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="section section_white section_inner">
+      <div class="row">
+        <div class="column">
+          <div class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li>Отзывы</li>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h1>Отзывы</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 column">
+          <label>
+            <div class="form-label">Медицинский центр</div>
+            <select>
+              <option value="">Поликлиника Муштари, 12А</option>
+              <option value="">Поликлиника Муштари, 11А</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <ul class="doctor-feedback">
+            <li class="doctor-feedback__item">
+              <div class="doctor-feedback__header">
+                Константин Константинопольский<span
+                  class="doctor-feedback__date"
+                  >12 января 2018г.</span
+                >
+              </div>
+              <p class="doctor-feedback__body">
+                Повседневная практика показывает, что укрепление и развитие
+                структуры позволяет оценить значение новых предложений. Не
+                следует, однако забывать, что начало повседневной работы по
+                формированию позиции в значительной степени обуславливает
+                создание модели развития. Равным образом новая модель
+                организационной деятельности влечет за собой процесс внедрения и
+                модернизации направлений прогрессивного развития. Равным образом
+                консультация с широким активом позволяет выполнять важные
+                задания по разработке новых предложений.
+              </p>
+              <div class="doctor-feedback__doctor">
+                <div class="doctor-feedback__photo-container">
+                  <img
+                    class="doctor-feedback__photo"
+                    src="https://gazizzz.github.io/MedExpert/images/employees/1.png"
+                  />
+                </div>
+                <div class="doctor-feedback__doctor-info">
+                  Махмутов<br />Динар Маратович
+                  <div class="doctor-feedback__doctor-position">
+                    Стоматолог-терапевт
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doctor-feedback__item">
+              <div class="doctor-feedback__header">
+                Константин Константинопольский<span
+                  class="doctor-feedback__date"
+                  >12 января 2018г.</span
+                >
+              </div>
+              <p class="doctor-feedback__body">
+                Повседневная практика показывает, что укрепление и развитие
+                структуры позволяет оценить значение новых предложений. Не
+                следует, однако забывать, что начало повседневной работы по
+                формированию позиции в значительной степени обуславливает
+                создание модели развития. Равным образом новая модель
+                организационной деятельности влечет за собой процесс внедрения и
+                модернизации направлений прогрессивного развития. Равным образом
+                консультация с широким активом позволяет выполнять важные
+                задания по разработке новых предложений.
+              </p>
+              <div class="doctor-feedback__doctor">
+                <div class="doctor-feedback__photo-container">
+                  <img
+                    class="doctor-feedback__photo"
+                    src="https://gazizzz.github.io/MedExpert/images/employees/1.png"
+                  />
+                </div>
+                <div class="doctor-feedback__doctor-info">
+                  Махмутов<br />Динар Маратович
+                  <div class="doctor-feedback__doctor-position">
+                    Стоматолог-терапевт
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doctor-feedback__item">
+              <div class="doctor-feedback__header">
+                Константин Константинопольский<span
+                  class="doctor-feedback__date"
+                  >12 января 2018г.</span
+                >
+              </div>
+              <p class="doctor-feedback__body">
+                Повседневная практика показывает, что укрепление и развитие
+                структуры позволяет оценить значение новых предложений. Не
+                следует, однако забывать, что начало повседневной работы по
+                формированию позиции в значительной степени обуславливает
+                создание модели развития. Равным образом новая модель
+                организационной деятельности влечет за собой процесс внедрения и
+                модернизации направлений прогрессивного развития. Равным образом
+                консультация с широким активом позволяет выполнять важные
+                задания по разработке новых предложений.
+              </p>
+              <div class="doctor-feedback__doctor">
+                <div class="doctor-feedback__photo-container">
+                  <img
+                    class="doctor-feedback__photo"
+                    src="https://gazizzz.github.io/MedExpert/images/employees/1.png"
+                  />
+                </div>
+                <div class="doctor-feedback__doctor-info">
+                  Махмутов<br />Динар Маратович
+                  <div class="doctor-feedback__doctor-position">
+                    Стоматолог-терапевт
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column text-center u-mt50">
+          <button class="button hollow u-plain">Показать еще</button>
+        </div>
+      </div>
+    </section>
+    <section class="section section_call">
+      <div class="row">
+        <div class="large-offset-8 large-4 column">
+          <h1 class="section__title">Записаться на прием</h1>
+          <form>
+            <input type="text" placeholder="Ваше имя" />
+            <input type="tel" placeholder="Телефон" />
+            <button class="button large expanded" type="submit">
+              Записаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet">
+            <li class="address-list__item">
+              <a class="footer__link" href="/">Поликлиника Муштари, 12А</a>
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column footer__call">
+          <a class="footer__link link-tel" href="tel:+78435903333"
+            >+7(843) 590-33-33</a
+          >
+          <div><a class="footer__link" href="/">Обратная звязь</a></div>
+        </div>
+      </div>
+      <nav class="nav footer__nav">
+        <div class="row">
+          <div class="column">
+            <ul class="nav__list no-bullet">
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Услуги и цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">О клинике</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Расписание врачей</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Акции и Новости</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row footer__info">
+        <div class="column text-center">
+          <p class="footer__desc">
+            Внимание! Информация, размещённая на данном сайте, ни в коем случае
+            не должна использоваться читателями для самостоятельной постановки
+            диагноза или самолечения! Информация на сайте размещена
+            исключительно в целях исполнения обязанностей, предусмотренных
+            Федеральным законом «О защите прав потребителя» и не является
+            рекламой. Правовая информация. Любое использование (копирование)
+            информации с данного сайта возможно только с разрешения
+            правообладателя, полученного в письменном виде.
+          </p>
+          <p class="u-plain">
+            Разработка и продвижение сайтов&nbsp;<a
+              class="footer__link footer__site"
+              href="/"
+              >aaccent</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="reveal" id="call-modal" data-reveal="">
+      <h1 class="section__title">Записаться на прием</h1>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="tel" placeholder="Телефон" />
+        <button class="button large expanded" type="submit">Записаться</button>
+      </form>
+      <button
+        class="close-button"
+        data-close=""
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.css"
+    />
+    <script src="https://gazizzz.github.io/MedExpert/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/fontfaceobserver/fontfaceobserver.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

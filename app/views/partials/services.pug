@@ -1,0 +1,30 @@
+- var services = ['Приём специалистов', 'Хирургия', 'Маммология', 'Лабораторные исследования', 'Офтальмология', 'Онкология', 'Ультразвуковые исследования','Неврология','Пластическая хирургия','Функциональная диагностика','Мануальная терапия','Вакцинопрофилактика','Гинекология','Физиопроцедуры','Процедурный кабинет','Ведение беременности','Травматология-ортопедия','Комплексные программы','Флебология','Отоларингология','Пакеты программ','Урология','Дерматовенерология','Вызов на дом','Кардиология','Эндокринология','Медицинские справки','Гастроэнтерология', 'Проктология', 'Больничные листы']
+
+.service
+  ul.service__header(data-tabs id="service-tabs" data-link-class='service__header-item' data-panel-class="service__list")
+    li.service__header-item.service__header-item_active.is-active
+      a.service__header-text(href="#service_panel1" aria-selected="true")
+        img.service__header-icon(src="https://gazizzz.github.io/MedExpert/images/services/1.png", alt="Для взрослых")
+        div Для взрослых
+    li.service__header-item
+      a.service__header-text(href="#service_panel2")
+        img.service__header-icon(src="https://gazizzz.github.io/MedExpert/images/services/2.png", alt="Для детей")
+        div Для детей
+    li.service__header-item
+      a.service__header-text(href="#service_panel3")
+        img.service__header-icon(src="https://gazizzz.github.io/MedExpert/images/services/3.png", alt="Комплексные программы")
+        div Комплексные программы
+  .service__line
+div(data-tabs-content="service-tabs")
+  ul.service__list.row.is-active#service_panel1
+    each service in services
+      li.large-4.medium-6.columns
+        a.service__item= service
+  ul.service__list.row#service_panel2
+    each service in services
+      li.large-4.medium-6.columns
+        a.service__item улуги 2
+  ul.service__list.row#service_panel3
+    each service in services
+      li.large-4.medium-6.columns
+        a.service__item услуги 3

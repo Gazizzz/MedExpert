@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gulp Project Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <div class="header-info">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet hide-for-small-only">
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Муштари, 12А</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                > Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column header-info__right">
+          <div class="header-info__social">
+            <a class="header-info__tel link-tel" href="tel:+78435903333"
+              >+7(843) 590-33-33</a
+            >
+            <div class="header-info__social-icons">
+              <a class="icon icon_social icon_vk" href="/">Vkontakte</a
+              ><a class="icon icon_social icon_instagram" href="/">Instagram</a>
+            </div>
+          </div>
+          <div class="header-info__time">
+            Сегодня работаем до<strong> 20:00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="row">
+        <div class="column header-nav__top">
+          <a class="header-nav__logo" href="/"
+            ><img
+              src="https://gazizzz.github.io/MedExpert/images/logo.png"
+              alt="Медэксперт"
+          /></a>
+          <ul class="header-nav__actions no-bullet show-for-large">
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="row">
+        <div class="column">
+          <div
+            class="title-bar"
+            data-responsive-toggle="nav-menu"
+            data-hide-for="large"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="nav-menu"
+            ></button>
+          </div>
+          <ul class="nav__list no-bullet" id="nav-menu">
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="/">Услуги и цены</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 1</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 2</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 3</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 4</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 5</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">О клинике</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Расписание врачей</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Акции и Новости</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="/">Отзывы</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="section section_white section_inner section_plain-bottom">
+      <div class="row">
+        <div class="column">
+          <div class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/">О клинике</a></li>
+            <li><a href="/">Врачи</a></li>
+            <li>Махмутов Динар Маратович</li>
+          </div>
+        </div>
+      </div>
+      <div class="doctor-card">
+        <div class="row doctor-card__container">
+          <div class="large-6 column doctor-card__info-container">
+            <h1 class="doctor-card__title">Махмутов Динар Маратович</h1>
+            <div class="doctor-card__study">Доктор наук</div>
+            <div class="doctor-card__info">
+              <div class="doctor-card__info-item">
+                <div class="doctor-card__info-title">Специальность:</div>
+                <div class="doctor-card__info-value">Стоматолог-терапевт</div>
+              </div>
+              <div class="doctor-card__info-item">
+                <div class="doctor-card__info-title">Стаж:</div>
+                <div class="doctor-card__info-value">15 лет</div>
+              </div>
+            </div>
+            <div class="doctor-card__info">
+              <div class="doctor-card__info-item">
+                <div class="doctor-card__info-title">Клиника:</div>
+                <div class="doctor-card__info-value">Муштари, 12А</div>
+              </div>
+            </div>
+            <div class="doctor-card__button">
+              <button
+                class="button button--long u-plain large"
+                data-open="call-modal"
+              >
+                Записаться на прием
+              </button>
+            </div>
+          </div>
+          <div class="show-for-large large-6 column">
+            <img
+              src="https://gazizzz.github.io/MedExpert/images/doctor_large.png"
+            />
+          </div>
+        </div>
+      </div>
+      <section class="section_content">
+        <div class="row">
+          <div class="column">
+            <h1>О враче</h1>
+            <p>
+              Равным образом дальнейшее развитие различных форм деятельности
+              требуют определения и уточнения систем массового участия. Таким
+              образом сложившаяся структура организации в значительной степени
+              обуславливает создание направлений прогрессивного развития. С
+              другой стороны дальнейшее развитие различных форм деятельности
+              играет важную роль в формировании дальнейших направлений развития.
+            </p>
+            <p>
+              Равным образом дальнейшее развитие различных форм деятельности
+              способствует подготовки и реализации форм развития. Задача
+              организации, в особенности же укрепление и развитие структуры
+              требуют от нас анализа дальнейших направлений развития.
+              Разнообразный и богатый опыт новая модель организационной
+              деятельности способствует подготовки и реализации модели развития.
+              Равным образом новая модель организационной деятельности играет
+              важную роль в формировании систем массового участия. Идейные
+              соображения высшего порядка, а также сложившаяся структура
+              организации позволяет выполнять важные задания по разработке
+              системы обучения кадров, соответствует насущным потребностям.
+            </p>
+            <h1 class="page__inner-title">Профессиональные навыки и услуги</h1>
+            <p>
+              Равным образом дальнейшее развитие различных форм деятельности
+              требуют определения и уточнения систем массового участия. Таким
+              образом сложившаяся структура организации в значительной степени
+              обуславливает создание направлений прогрессивного развития. С
+              другой стороны дальнейшее развитие различных форм деятельности
+              играет важную роль в формировании дальнейших направлений развития.
+            </p>
+            <ul class="styled-list">
+              <li>Название навыка или услуги</li>
+              <li>Название навыка или услуги</li>
+              <li>Название навыка или услуги</li>
+              <li>Название навыка или услуги</li>
+              <li>Название навыка или услуги</li>
+              <li>Название навыка или услуги</li>
+            </ul>
+            <h1 class="page__inner-title">Образование</h1>
+            <ul class="styled-list">
+              <li>
+                1994 г. — Российский государственный медицинский университет им.
+                Н.И. Пирогова, лечебное дело.
+              </li>
+              <li>
+                1996 г. — клиническая ординатура, кафедра клинической
+                эндокринологии и диабетологии Российской медицинской академии
+                последипломного образования МЗ РФ, эндокринология.
+              </li>
+              <li>
+                1998 г. — аспиратура, кафедра клинической эндокринологии и
+                диабетологии Российской медицинской академии последипломного
+                образования МЗ РФ, «Эндокринология».
+              </li>
+              <li>
+                1999 г. — защита кандидатской диссертации. Тема: «Диагностика и
+                критерии эффективности терапии эндокринной офтальмопатии».
+              </li>
+            </ul>
+            <h1 class="page__inner-title">Повышение квалификации</h1>
+            <ul class="styled-list">
+              <li>«Эндокринология»;</li>
+              <li>
+                «Андрология и гинекологическая эндокринология детского и
+                подросткового возраста».
+              </li>
+            </ul>
+            <h1 class="page__inner-title">Отзывы</h1>
+            <ul class="doctor-feedback">
+              <li class="doctor-feedback__item">
+                <div class="doctor-feedback__header">
+                  Константин Константинопольский<span
+                    class="doctor-feedback__date"
+                    >12 января 2018г.</span
+                  >
+                </div>
+                <p class="doctor-feedback__body">
+                  Повседневная практика показывает, что укрепление и развитие
+                  структуры позволяет оценить значение новых предложений. Не
+                  следует, однако забывать, что начало повседневной работы по
+                  формированию позиции в значительной степени обуславливает
+                  создание модели развития. Равным образом новая модель
+                  организационной деятельности влечет за собой процесс внедрения
+                  и модернизации направлений прогрессивного развития. Равным
+                  образом консультация с широким активом позволяет выполнять
+                  важные задания по разработке новых предложений.
+                </p>
+              </li>
+              <li class="doctor-feedback__item">
+                <div class="doctor-feedback__header">
+                  Константин Константинопольский<span
+                    class="doctor-feedback__date"
+                    >12 января 2018г.</span
+                  >
+                </div>
+                <p class="doctor-feedback__body">
+                  Повседневная практика показывает, что укрепление и развитие
+                  структуры позволяет оценить значение новых предложений. Не
+                  следует, однако забывать, что начало повседневной работы по
+                  формированию позиции в значительной степени обуславливает
+                  создание модели развития. Равным образом новая модель
+                  организационной деятельности влечет за собой процесс внедрения
+                  и модернизации направлений прогрессивного развития. Равным
+                  образом консультация с широким активом позволяет выполнять
+                  важные задания по разработке новых предложений.
+                </p>
+              </li>
+              <li class="doctor-feedback__item">
+                <div class="doctor-feedback__header">
+                  Константин Константинопольский<span
+                    class="doctor-feedback__date"
+                    >12 января 2018г.</span
+                  >
+                </div>
+                <p class="doctor-feedback__body">
+                  Повседневная практика показывает, что укрепление и развитие
+                  структуры позволяет оценить значение новых предложений. Не
+                  следует, однако забывать, что начало повседневной работы по
+                  формированию позиции в значительной степени обуславливает
+                  создание модели развития. Равным образом новая модель
+                  организационной деятельности влечет за собой процесс внедрения
+                  и модернизации направлений прогрессивного развития. Равным
+                  образом консультация с широким активом позволяет выполнять
+                  важные задания по разработке новых предложений.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet">
+            <li class="address-list__item">
+              <a class="footer__link" href="/">Поликлиника Муштари, 12А</a>
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column footer__call">
+          <a class="footer__link link-tel" href="tel:+78435903333"
+            >+7(843) 590-33-33</a
+          >
+          <div><a class="footer__link" href="/">Обратная звязь</a></div>
+        </div>
+      </div>
+      <nav class="nav footer__nav">
+        <div class="row">
+          <div class="column">
+            <ul class="nav__list no-bullet">
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Услуги и цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">О клинике</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Расписание врачей</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Акции и Новости</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row footer__info">
+        <div class="column text-center">
+          <p class="footer__desc">
+            Внимание! Информация, размещённая на данном сайте, ни в коем случае
+            не должна использоваться читателями для самостоятельной постановки
+            диагноза или самолечения! Информация на сайте размещена
+            исключительно в целях исполнения обязанностей, предусмотренных
+            Федеральным законом «О защите прав потребителя» и не является
+            рекламой. Правовая информация. Любое использование (копирование)
+            информации с данного сайта возможно только с разрешения
+            правообладателя, полученного в письменном виде.
+          </p>
+          <p class="u-plain">
+            Разработка и продвижение сайтов&nbsp;<a
+              class="footer__link footer__site"
+              href="/"
+              >aaccent</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="reveal" id="call-modal" data-reveal="">
+      <h1 class="section__title">Записаться на прием</h1>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="tel" placeholder="Телефон" />
+        <button class="button large expanded" type="submit">Записаться</button>
+      </form>
+      <button
+        class="close-button"
+        data-close=""
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.css"
+    />
+    <script src="https://gazizzz.github.io/MedExpert/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/fontfaceobserver/fontfaceobserver.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

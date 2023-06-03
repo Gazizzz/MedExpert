@@ -1,0 +1,14 @@
+.address-list {
+  margin: -5px 0 0;
+  
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.doctor-feedback {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 40px;
+      border-bottom: 1px solid $gray-df;
+    }
+
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+  }
+
+  &__header {
+    color: $gray-92;
+  }
+
+  &__date {
+    margin-left: 10px;
+  }
+
+  &__body {
+    margin: 17px 0 0;
+    color: $black;
+  }
+
+  &__doctor {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo-container {
+    margin-right: 21px;
+  }
+
+  &__photo {
+    max-height: 108px;
+  }
+
+  &__doctor-info {
+    color: $black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__doctor-position {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+    opacity: 0.55;
+    letter-spacing: 0.6px;
+  }
+
+  @include breakpoint(small only) {
+    &__date {
+      display: block;
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+extends base
+
+block content
+  section.section.section_white.section_inner
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li
+            a(href="/") Услуги и цены
+          li Прием специалистов
+    .row
+      main.large-9.column
+        h1 Прием специалистов
+        p Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития. Задача организации, в особенности же укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития.
+        h2 У нас принимают специалисты:
+        .js-second-carousel
+          each val in [1,2,3,4,5]
+            .row.specialist__card-list
+              .medium-6.column
+                .specialist__card
+                  .specialist__card-title Махмутов Динар Маратович
+                  .specialist__card-position Стоматолог-терапевт
+                  .specialist__card-study Доктор наук
+                  a.specialist__card-study Подробнее
+              .medium-6.column
+                .specialist__card
+                  .specialist__card-title Махмутов Динар Маратович
+                  .specialist__card-position Стоматолог-терапевт
+                  .specialist__card-study Доктор наук
+                  a.specialist__card-study Подробнее
+        .row
+          .large-6.columns
+            a.button.hollow.u-plain Все врачи
+          .large-6.columns
+            .specialist__arrows
+              .specialist__arrow.js-second-carousel-prev
+                include icons/arrow-plain
+              .specialist__arrow.specialist__arrow_next.js-second-carousel-next
+                include icons/arrow-plain
+
+        h1.page__inner-title Прейскурант
+        .price-table#price-table
+          table
+            tbody
+              each val in [1,2,3,4,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                tr
+                  td Аллерголог
+                  td.text-right
+                    strong от 1500 руб.
+          .price-table__arrow(data-table-expand="price-table")
+            include icons/arrow-plain
+        h1.page__inner-title Что лечит эндокринолог
+        ul#tabs.tabs(data-tabs='')
+          li.tabs-title.is-active
+            a(href='#panel1', aria-selected='true') Что лечит эндокринолог
+          li.tabs-title
+            a(data-tabs-target='panel2', href='#panel2') Прием эндокринолога
+          li.tabs-title
+            a(href='#panel3', aria-selected='true') Лечение
+          li.tabs-title
+            a(data-tabs-target='panel4', href='#panel2') Тревожные симптомы
+        .tabs-content(data-tabs-content='tabs')
+          #panel1.tabs-panel.is-active
+            p Врач-эндокринолог лечит:
+            ul.styled-list
+              li Заболевания щитовидной железы (диффузный зоб, гипотиреоз, тиреоидит и др.)и паращитовидных желез;
+              li Избыточную массу тела, ожирение и метаболический синдром (совместно с диетологом);
+              li Возрастной андрогенный дефицит у мужчин (совместно с урологами);
+              li Акромегалию;
+              li Гиперпролактинемию;
+              li Синдром гиперандрогении у женщин (совместно с гинекологами);
+              li Несахарный диабет;
+              li Болезни надпочечников.
+          #panel2.tabs-panel
+            p Врач-эндокринолог лечит:
+            ul.styled-list
+              li Заболевания щитовидной железы (диффузный зоб, гипотиреоз, тиреоидит и др.)и паращитовидных желез;
+              li Избыточную массу тела, ожирение и метаболический синдром (совместно с диетологом);
+              li Возрастной андрогенный дефицит у мужчин (совместно с урологами);
+              li Акромегалию;
+              li Гиперпролактинемию;
+          #panel3.tabs-panel
+            p Врач-эндокринолог лечит:
+            ul.styled-list
+              li Гиперпролактинемию;
+              li Синдром гиперандрогении у женщин (совместно с гинекологами);
+              li Несахарный диабет;
+              li Болезни надпочечников.
+          #panel4.tabs-panel
+            p Врач-эндокринолог лечит:
+            ul.styled-list
+              li Заболевания щитовидной железы (диффузный зоб, гипотиреоз, тиреоидит и др.)и паращитовидных желез;
+              li Избыточную массу тела, ожирение и метаболический синдром (совместно с диетологом);
+              li Возрастной андрогенный дефицит у мужчин (совместно с урологами);
+              li Акромегалию;
+      aside.large-3.column
+        .specialist__aside
+          .specialist__aside-title Услуги медэксперт
+          ul.tabs.specialist__aside-tabs#aside-tabs(data-tabs='')
+            li.tabs-title.specialist__aside-tab.is-active
+              a(href="#aside_panel1" aria-selected="true")
+                img(src="https://gazizzz.github.io/MedExpert/images/services/1.png", alt="Для взрослых")
+            li.tabs-title.specialist__aside-tab
+              a(data-tabs-target="aside_panel2" href="#aside_panel2")
+                img(src="https://gazizzz.github.io/MedExpert/images/services/2.png", alt="Для детей")
+            li.tabs-title.specialist__aside-tab
+              a(data-tabs-target="aside_panel3" href="#aside_panel3")
+                img(src="https://gazizzz.github.io/MedExpert/images/services/3.png", alt="Комплексные программы")
+          .specialist__aside-body
+            .specialist__aside-body-title Приём специалистов
+            div(data-tabs-content="aside-tabs")
+              ul.tabs-panel.specialist__aside-list.no-bullet.is-active#aside_panel1
+                each val in [1,2,3,4,55,6,1,1,1,1,1,1,1,1,1,1]
+                  li.specialist__aside-item
+                    a.specialist__aside-link Лабораторные исследования
+              ul.tabs-panel.specialist__aside-list.no-bullet#aside_panel2
+                each val in [1,2,3,4,55,6,1,1,1,1,1,1,1,1,1,1]
+                  li.specialist__aside-item
+                    a.specialist__aside-link Лабораторные исследования2
+              ul.tabs-panel.specialist__aside-list.no-bullet#aside_panel3
+                each val in [1,2,3,4,55,6,1,1,1,1,1,1,1,1,1,1]
+                  li.specialist__aside-item
+                    a.specialist__aside-link Лабораторные исследования3
+
+  include partials/appointment

@@ -1,0 +1,110 @@
+extends base
+
+block content
+  include partials/carousel
+
+  section.section.text-center.section_white
+    .row
+      .column
+        h1.section__title Почему выбирают нас
+    .row
+      .medium-6.large-3.columns
+        .why__item
+          img.why__img(src="https://gazizzz.github.io/MedExpert/images/why/1.png", alt="Опыт работы")
+          .why__title Опыт работы
+          .why__text Медицинские услуги предоставляются высококвалифицированным персоналом с большим стажем работы
+
+      .medium-6.large-3.columns
+        .why__item
+          img.why__img(src="https://gazizzz.github.io/MedExpert/images/why/2.png", alt="доступность")
+          .why__title доступность
+          .why__text Доступность для всех возрастных категорий населения  (детям и взрослым)
+
+      .medium-6.large-3.columns
+        .why__item
+          img.why__img(src="https://gazizzz.github.io/MedExpert/images/why/3.png", alt="условия")
+          .why__title условия
+          .why__text Наличие современного оборудования и удобный режим работы
+
+      .medium-6.large-3.columns
+        .why__item
+          img.why__img(src="https://gazizzz.github.io/MedExpert/images/why/4.png", alt="без очередей")
+          .why__title без очередей
+          .why__text Удобная система записи  (через сайт и по телефону) на подходящее для вас время
+
+  section.section.text-center
+    .row
+      .column
+        h1.section__title Наши услуги
+    .row
+      .column
+        include partials/services
+
+  section.section.section_about
+    .row
+      .column
+        h1.section__titel Разнообразный и богатый опыт
+    .row
+      .large-6.column
+        p Задача организации, в особенности же реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа модели развития.
+
+  section.section.section_white
+    .row
+      .column.text-center
+        h1.section__title Медицинские центры «Медэксперт»
+        p Программы годового медицинского обслуживания для детей разработаны в соответствии с возрастными потребностями и особенностями развития ребенка, а так же нормативными актами и стандартами оказания медицинской помощи, утвержденными Министерством Здравоохранения РФ
+    include partials/department
+
+  section.section.employees.employees_home
+    .row
+      .column.text-center.employees__header
+        h1.section__title Наши сотрудники
+        .employees__arrows
+          .employees__arrow.js-doctors-carousel-prev
+            include icons/arrow-plain
+          .employees__arrow.employees__arrow_next.js-doctors-carousel-next
+            include icons/arrow-plain
+    .row
+      .column
+        include partials/doctors
+        .row.employees__list.js-doctors-carousel
+          each i in [1,2,3,4]
+            each val in [1,2,3,4]
+              +doctor-item(val)
+
+  include partials/appointment
+  include partials/news-item
+
+  section.section.section_white
+    .row
+      .column.text-center
+        h1.section__title Новости
+    .row
+      each val in [1,2,3,4]
+        .medium-6.large-3.columns
+          +news-item(val)
+  section.section.section_notes
+    .row
+      .large-offset-6.large-6.columns
+        h1.section__title Получить налоговый вычет
+        p.u-mb35 Задача организации, в особенности же реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+        a.button.large.button--long.u-plain(href="/") Подробнее
+
+  .header-nav
+    .row
+      .column.header-nav__top
+        a.header-nav__logo(href="/")
+          img(src="https://gazizzz.github.io/MedExpert/images/logo.png", alt="Медэксперт")
+        ul.header-nav__actions.no-bullet.show-for-large
+          li
+            img.header-nav__actions-icon(src="https://gazizzz.github.io/MedExpert/images/results.png", alt="Результаты анализов")
+            a.header-nav__actions-link(data-open="call-modal") Результаты анализов
+          li
+            img.header-nav__actions-icon(src="https://gazizzz.github.io/MedExpert/images/doctor.png", alt="Вызов врача на дом")
+            a.header-nav__actions-link(data-open="call-modal") Вызов врача на дом
+          li
+            img.header-nav__actions-icon(src="https://gazizzz.github.io/MedExpert/images/notice.png", alt="Записаться на прием")
+            a.header-nav__actions-link(data-open="call-modal") Записаться на прием
+          li
+            img.header-nav__actions-icon(src="https://gazizzz.github.io/MedExpert/images/feedback.png", alt="Оставить отзыв")
+            a.header-nav__actions-link(data-open="call-modal") Оставить отзыв

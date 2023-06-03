@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gulp Project Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <div class="header-info">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet hide-for-small-only">
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Муштари, 12А</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                > Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column header-info__right">
+          <div class="header-info__social">
+            <a class="header-info__tel link-tel" href="tel:+78435903333"
+              >+7(843) 590-33-33</a
+            >
+            <div class="header-info__social-icons">
+              <a class="icon icon_social icon_vk" href="/">Vkontakte</a
+              ><a class="icon icon_social icon_instagram" href="/">Instagram</a>
+            </div>
+          </div>
+          <div class="header-info__time">
+            Сегодня работаем до<strong> 20:00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="row">
+        <div class="column header-nav__top">
+          <a class="header-nav__logo" href="/"
+            ><img
+              src="https://gazizzz.github.io/MedExpert/images/logo.png"
+              alt="Медэксперт"
+          /></a>
+          <ul class="header-nav__actions no-bullet show-for-large">
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="row">
+        <div class="column">
+          <div
+            class="title-bar"
+            data-responsive-toggle="nav-menu"
+            data-hide-for="large"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="nav-menu"
+            ></button>
+          </div>
+          <ul class="nav__list no-bullet" id="nav-menu">
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="/">Услуги и цены</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 1</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 2</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 3</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 4</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 5</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">О клинике</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Расписание врачей</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Акции и Новости</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="/">Отзывы</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="section section_inner section_white section_plain-bottom schedule"
+    >
+      <div class="row">
+        <div class="column">
+          <div class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li>Акции и новости</li>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h1>Акции и новости</h1>
+        </div>
+      </div>
+      <section class="carousel">
+        <div class="row">
+          <div class="column js-carousel">
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="carousel__item js-carousel-item"
+              style="
+                background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png);
+              "
+            >
+              <h1 class="carousel__title">
+                Успейте защитить себя <br />от гриппа
+              </h1>
+              <div class="carousel__text">
+                Предварительный осмотр и вакцинация
+              </div>
+              <div class="carousel__price">
+                <span class="carousel__price-old">1250р.</span>500р.
+              </div>
+              <div class="carousel__buttons">
+                <button class="slick-arrow slick-prev">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+                <button class="slick-arrow slick-next">
+                  <span class="slick-arrow__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="45"
+                      height="45"
+                      viewbox="0 0 45 45"
+                    >
+                      <g transform="translate(-198 -637)">
+                        <path
+                          id="a"
+                          d="M206.15 645.15A20.85 20.85 0 0 1 221 639c5.61 0 10.88 2.18 14.85 6.15A20.85 20.85 0 0 1 242 660c0 5.6-2.19 10.88-6.15 14.84A20.86 20.86 0 0 1 221 681a20.85 20.85 0 0 1-14.85-6.16A20.85 20.85 0 0 1 200 660c0-5.61 2.19-10.88 6.15-14.85zM221 679.97A20 20 0 0 0 240.97 660 20 20 0 0 0 221 640.03 20 20 0 0 0 201.03 660 20 20 0 0 0 221 679.97zm-4.42-20.33l6.49-6.48c.2-.2.52-.2.73 0 .2.2.2.52 0 .73l-6.12 6.12 6.12 6.12a.52.52 0 0 1-.37.87.5.5 0 0 1-.36-.15l-6.49-6.48a.52.52 0 0 1 0-.73z"
+                        ></path>
+                      </g></svg
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_content">
+        <div class="row">
+          <div class="columns text-center">
+            <h1>Акции</h1>
+          </div>
+        </div>
+        <div class="row text-center flex-list">
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/1.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/2.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/3.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/1.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/2.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+          <div class="medium-6 large-4 columns">
+            <div class="stocks__item">
+              <div class="stocks__image-container">
+                <img
+                  class="stocks__image"
+                  src="https://gazizzz.github.io/MedExpert/images/stocks/3.png"
+                  alt="Успейте защитить себя от гриппа"
+                />
+              </div>
+              <div class="stocks__title">Успейте защитить себя от гриппа</div>
+              <div class="stocks__desc">
+                Предварительный осмотр и вакцинация 500 р.
+              </div>
+              <a class="stocks__more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"><a class="button hollow">Показать еще</a></div>
+      </section>
+      <section class="section section_content">
+        <div class="text-center">
+          <h1>Новости</h1>
+        </div>
+        <div class="row">
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/1.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/2.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/3.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/4.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/1.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/2.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/3.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/4.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/1.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/2.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/3.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-6 large-3 columns">
+            <div class="stocks__item">
+              <div class="news__item">
+                <img
+                  src="https://gazizzz.github.io/MedExpert/images/news/4.jpg"
+                />
+                <div class="news__title">
+                  В Медэксперт Детство новые пакеты услуг
+                </div>
+                <a class="news__more">подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"><a class="button hollow">Показать еще</a></div>
+      </section>
+    </section>
+    <section class="section section_call">
+      <div class="row">
+        <div class="large-offset-8 large-4 column">
+          <h1 class="section__title">Записаться на прием</h1>
+          <form>
+            <input type="text" placeholder="Ваше имя" />
+            <input type="tel" placeholder="Телефон" />
+            <button class="button large expanded" type="submit">
+              Записаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet">
+            <li class="address-list__item">
+              <a class="footer__link" href="/">Поликлиника Муштари, 12А</a>
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column footer__call">
+          <a class="footer__link link-tel" href="tel:+78435903333"
+            >+7(843) 590-33-33</a
+          >
+          <div><a class="footer__link" href="/">Обратная звязь</a></div>
+        </div>
+      </div>
+      <nav class="nav footer__nav">
+        <div class="row">
+          <div class="column">
+            <ul class="nav__list no-bullet">
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Услуги и цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">О клинике</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Расписание врачей</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Акции и Новости</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row footer__info">
+        <div class="column text-center">
+          <p class="footer__desc">
+            Внимание! Информация, размещённая на данном сайте, ни в коем случае
+            не должна использоваться читателями для самостоятельной постановки
+            диагноза или самолечения! Информация на сайте размещена
+            исключительно в целях исполнения обязанностей, предусмотренных
+            Федеральным законом «О защите прав потребителя» и не является
+            рекламой. Правовая информация. Любое использование (копирование)
+            информации с данного сайта возможно только с разрешения
+            правообладателя, полученного в письменном виде.
+          </p>
+          <p class="u-plain">
+            Разработка и продвижение сайтов&nbsp;<a
+              class="footer__link footer__site"
+              href="/"
+              >aaccent</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="reveal" id="call-modal" data-reveal="">
+      <h1 class="section__title">Записаться на прием</h1>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="tel" placeholder="Телефон" />
+        <button class="button large expanded" type="submit">Записаться</button>
+      </form>
+      <button
+        class="close-button"
+        data-close=""
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.css"
+    />
+    <script src="https://gazizzz.github.io/MedExpert/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/fontfaceobserver/fontfaceobserver.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

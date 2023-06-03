@@ -1,0 +1,56 @@
+.carousel {
+  position: relative;
+  background: $body-background;
+
+  &__item {
+    height: 560px;
+    padding: 58px 0 135px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    outline: none;
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__text {
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  &__price {
+    margin-top: 53px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &__price-old {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 39px;
+    font-size: 36px;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+
+  &__buttons {
+    margin-top: 40px;
+  }
+
+  @include breakpoint(small only) {
+    &__item {
+      background-size: 100%;
+      background-position: 100% 100%;
+    }
+  }
+}

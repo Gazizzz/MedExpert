@@ -1,0 +1,42 @@
+extends base
+
+block content
+  section.section.section_white.section_inner
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li Отзывы
+    .row
+      .column
+        h1 Отзывы
+    .row
+      .large-6.column
+        label
+          .form-label Медицинский центр
+          select
+            option(value="") Поликлиника Муштари, 12А
+            option(value="") Поликлиника Муштари, 11А
+    .row
+      .column
+        ul.doctor-feedback
+          each val in [1,2,3]
+            li.doctor-feedback__item
+              .doctor-feedback__header
+                | Константин Константинопольский
+                span.doctor-feedback__date 12 января 2018г.
+              p.doctor-feedback__body Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение новых предложений. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание модели развития. Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом консультация с широким активом позволяет выполнять важные задания по разработке новых предложений.
+              .doctor-feedback__doctor
+                .doctor-feedback__photo-container
+                  img.doctor-feedback__photo(src="https://gazizzz.github.io/MedExpert/images/employees/1.png")
+                .doctor-feedback__doctor-info
+                  | Махмутов
+                  br
+                  | Динар Маратович
+                  .doctor-feedback__doctor-position Стоматолог-терапевт
+    .row
+      .column.text-center.u-mt50
+        button.button.hollow.u-plain Показать еще
+
+  include partials/appointment

@@ -1,0 +1,36 @@
+.header-info {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  &__social {
+    display: flex;
+    font-weight: 300;
+  }
+
+  &__social-icons {
+    margin-left: auto;
+  }
+
+  &__tel {
+    line-height: 1;
+  }
+
+  &__time {
+    margin-top: 1px;
+  }
+
+  @include breakpoint (large down) {
+    &__right {
+      margin-top: 15px;
+    }
+  }
+
+  @include breakpoint (small only) {
+    display: block;
+
+    &__right {
+      margin: 0;
+    }
+  }
+}

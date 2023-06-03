@@ -1,0 +1,42 @@
+.stocks {
+  &__item {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  &__image-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 230px;
+    padding: 25px 25px 0;
+    background: $gray-f6;
+  }
+
+  &__image {
+    max-height: 205px;
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__desc {
+    margin-top: 11px;
+    font-size: 16px;
+  }
+
+  &__more {
+    display: inline-block;
+    margin-top: 17px;
+    color: $gray-6a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+}

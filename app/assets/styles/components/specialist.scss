@@ -1,0 +1,171 @@
+.specialist {
+  &__card-list {
+    padding: 5px 5px 0;
+    outline: none;
+  }
+
+  &__card {
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: $white;
+  }
+
+  &__card-title {
+    color: $black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__card-position {
+    margin-top: 15px;
+    opacity: 0.55;
+    color: $black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  &__card-study {
+    margin-top: 25px;
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__card-more {
+    margin-top: 7px;
+    color: $blue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__arrow {
+    width: 16px;
+    height: 29px;
+    opacity: 0.22;
+    fill: $black;
+    margin-left: 20px;
+
+    &:hover {
+      opacity: 1;
+      fill: $black;
+    }
+
+    &_next {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &__aside {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: $gray-f6;
+    border-radius: 5px;
+  }
+
+  &__aside-title {
+    color: $black;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &__aside-tabs.tabs {
+    display: flex;
+    margin: 18px 0 20px;
+  }
+
+  &__aside-tab.tabs-title {
+    width: 33%;
+    margin: 0 -1px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $blue-52;
+
+    a {
+      display: block;
+      padding: 5px;
+      background: transparent;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    a:focus,
+    a[aria-selected='true'] {
+      outline: none;
+      background: transparent;
+      border: 0;
+    }
+
+    &.is-active {
+      background: $blue-52;
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    a {
+      border: 0;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+
+  &__aside-body-title {
+    margin-bottom: 15px;
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  &__aside-list {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  &__aside-item:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &__aside-link {
+    color: $blue;
+    border: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  @include breakpoint(large down) {
+    &__arrows {
+      display: none;
+    }
+  }
+}

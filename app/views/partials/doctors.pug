@@ -1,0 +1,13 @@
+mixin doctor-item(index)
+  .medium-6.large-3.columns.employees__column
+    .employees__item
+      .employees__image
+        img(src=`https://gazizzz.github.io/MedExpert/images/employees/${index}.png`)
+      .employees__body
+        .employees__title
+          | Махмутов
+          br
+          | Динар Маратович
+        .employees__position Стоматолог-терапевт
+        .employees__study Доктор наук
+        a.employees__more(href="/") Подробнее

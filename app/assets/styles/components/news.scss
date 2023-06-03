@@ -1,0 +1,29 @@
+.news {
+  &__item {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 19px 0;
+    color: $black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+
+  &__more {
+    color: $gray-6a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+
+  @include breakpoint (large down) {
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.footer {
+  padding: 45px 0;
+  background-image: url("https://gazizzz.github.io/MedExpert/images/footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+
+  &__link {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      color: scale-color($white, $lightness: -15%);
+      border-color: scale-color($white, $lightness: -15%) !important;
+    }
+  }
+
+  &__nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+    background: transparent;
+    margin: 44px 0 32px;
+  }
+
+  &__nav-link {
+    padding: 26px 0;
+    color: $white;
+    font-size: 18px;
+    font-weight: 300;
+
+    &:hover {
+      color: scale-color($white, $lightness: -15%);
+    }
+  }
+
+  &__info {
+    color: $white;
+  }
+
+  &__call {
+    text-align: right;
+  }
+
+  &__desc {
+    margin-bottom: 25px;
+  }
+
+  &__site {
+    border: 0;
+    text-decoration: underline;
+  }
+
+  @include breakpoint(large down) {
+    padding: 20px 0;
+
+    &__call {
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    &__nav {
+      margin: 20px 0;
+    }
+
+    &__nav-link {
+      display: block;
+      padding: 5px 0;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

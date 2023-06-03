@@ -1,0 +1,39 @@
+extends base
+
+block content
+  include partials/stocks-item
+  section.section.section_inner.section_white.section_plain-bottom.schedule
+    .row
+      .column
+        .breadcrumbs
+          li
+            a(href="/") Главная
+          li Акции и новости
+    .row
+      .column
+        h1 Акции и новости
+    include partials/carousel
+    section.section.section_content
+      .row
+        .columns.text-center
+          h1 Акции
+      .row.text-center.flex-list
+        each i in [1,2]
+          each val in [1,2,3]
+            .medium-6.large-4.columns
+              +stocks-item(val)
+      .text-center
+        a.button.hollow Показать еще
+    section.section.section_content
+      include partials/news-item
+      .text-center
+        h1 Новости
+      .row
+        each i in [1,2,3]
+          each val in [1,2,3,4]
+            .medium-6.large-3.columns
+              .stocks__item
+                +news-item(val)
+      .text-center
+        a.button.hollow Показать еще
+  include partials/appointment

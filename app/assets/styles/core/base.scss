@@ -1,0 +1,148 @@
+a {
+  border-bottom: 1px dashed $anchor-color;
+
+  &:not(.button):hover {
+    border-bottom-color: $anchor-color-hover;
+  }
+}
+
+.button--long {
+  padding: 0.7em 2.9em;
+}
+
+.breadcrumbs a {
+  border: 0;
+  color: $black;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.styled-list {
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-left: 23px;
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      display: inline-block;
+      vertical-align: top;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      border: 3px solid $blue;
+      border-radius: 14px;
+      content: "";
+    }
+  }
+}
+
+.form-label {
+  font-size: 18px;
+  margin-bottom: 17px;
+}
+
+select {
+  background-image: url("https://gazizzz.github.io/MedExpert/images/arrow-down.svg");
+  background-position: right center;
+  background-size: 20px 13px;
+}
+
+.button-group {
+  display: flex;
+  margin: 0;
+  list-style: none;
+
+  li {
+    flex: 1;
+  }
+
+  li:first-child .button {
+    border-top-left-radius: $global-radius;
+    border-bottom-left-radius: $global-radius;
+  }
+
+  li:last-child .button {
+    border-top-right-radius: $global-radius;
+    border-bottom-right-radius: $global-radius;
+  }
+
+  li.is-active .button {
+    position: relative;
+    margin-right: -2px;
+    border: 1px solid $blue-52;
+    box-shadow: 0 0 1px $blue-52;
+    z-index: 1;
+  }
+
+  .button {
+    display: block;
+    padding: 0.5em;
+    margin-right: -1px;
+    font-weight: 300;
+    border-radius: 0;
+    border-color: $black;
+    color: $black;
+    background: $white;
+    font-size: 18px;
+  }
+
+  @include breakpoint(medium down) {
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 0 100%;
+      margin: 0 0 -1px;
+    }
+
+    li:first-child .button {
+      border-top-right-radius: $global-radius;
+      border-bottom-left-radius: 0;
+    }
+
+    li:last-child .button {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: $global-radius;
+    }
+
+    .button {
+      border-radius: 0;
+    }
+  }
+}
+
+table {
+  a {
+    color: $blue-52;
+    border: 0;
+  }
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(large) {
+    .title-bar {
+      display: none;
+    }
+  }
+}

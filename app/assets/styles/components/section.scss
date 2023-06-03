@@ -1,0 +1,66 @@
+.section {
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &_white {
+    background: $white;
+  }
+
+  &_about {
+    background-image: url("https://gazizzz.github.io/MedExpert/images/about.png");
+  }
+
+  &_call {
+    padding: 55px 0;
+    background-image: url("https://gazizzz.github.io/MedExpert/images/call.jpg");
+  }
+
+  &_notes {
+    background-image: url("https://gazizzz.github.io/MedExpert/images/notes.jpg");
+  }
+
+  &_rules {
+    background-image: url("https://gazizzz.github.io/MedExpert/images/rules.jpg");
+  }
+
+  &_inner {
+    padding-top: 20px;
+  }
+
+  &_content {
+    padding: 80px 0;
+  }
+
+  &_content + &_content {
+    padding-top: 0;
+  }
+
+  &_plain-bottom {
+    padding-bottom: 0;
+  }
+
+  &__header {
+    position: relative;
+  }
+
+  &__header-notice {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  @include breakpoint(large down) {
+    padding: 20px 0;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

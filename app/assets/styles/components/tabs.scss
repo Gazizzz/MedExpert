@@ -1,0 +1,34 @@
+.tabs {
+  margin: 0 0 0 -20px;
+}
+
+.tabs-title {
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  a {
+    padding: 15px 27px;
+    border-bottom: 3px solid transparent;
+    background: $gray-f6;
+    font-size: 18px;
+    color: $black;
+
+    &:hover {
+      color: $blue;
+      background: $gray-f6;
+      border-color: transparent;
+    }
+  }
+}
+
+.tabs-title > a:focus,
+.tabs-title > a[aria-selected='true'] {
+  color: $blue;
+  background: $gray-f6;
+  border-bottom: 3px solid $blue;
+}
+
+.tabs-panel {
+  padding-left: 0;
+  padding-right: 0;
+}

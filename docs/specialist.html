@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gulp Project Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <base href="/" />
+  </head>
+  <body>
+    <div class="header-info">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet hide-for-small-only">
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Муштари, 12А</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                > Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="address-list__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column header-info__right">
+          <div class="header-info__social">
+            <a class="header-info__tel link-tel" href="tel:+78435903333"
+              >+7(843) 590-33-33</a
+            >
+            <div class="header-info__social-icons">
+              <a class="icon icon_social icon_vk" href="/">Vkontakte</a
+              ><a class="icon icon_social icon_instagram" href="/">Instagram</a>
+            </div>
+          </div>
+          <div class="header-info__time">
+            Сегодня работаем до<strong> 20:00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="row">
+        <div class="column header-nav__top">
+          <a class="header-nav__logo" href="/"
+            ><img
+              src="https://gazizzz.github.io/MedExpert/images/logo.png"
+              alt="Медэксперт"
+          /></a>
+          <ul class="header-nav__actions no-bullet show-for-large">
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li>
+              <img
+                class="header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a class="header-nav__actions-link" data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="row">
+        <div class="column">
+          <div
+            class="title-bar"
+            data-responsive-toggle="nav-menu"
+            data-hide-for="large"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="nav-menu"
+            ></button>
+          </div>
+          <ul class="nav__list no-bullet" id="nav-menu">
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/results.png"
+                alt="Результаты анализов"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Результаты анализов</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/doctor.png"
+                alt="Вызов врача на дом"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Вызов врача на дом</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/notice.png"
+                alt="Записаться на прием"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Записаться на прием</a
+              >
+            </li>
+            <li class="nav__item hide-for-large">
+              <img
+                class="nav__icon header-nav__actions-icon"
+                src="https://gazizzz.github.io/MedExpert/images/feedback.png"
+                alt="Оставить отзыв"
+              /><a
+                class="nav__action-link header-nav__actions-link"
+                data-open="call-modal"
+                >Оставить отзыв</a
+              >
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="/">Услуги и цены</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 1</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 2</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 3</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 4</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 5</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="/service.html">Услуги 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">О клинике</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Расписание врачей</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Акции и Новости</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="/">Отзывы</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="/">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="section section_white section_inner">
+      <div class="row">
+        <div class="column">
+          <div class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/">Услуги и цены</a></li>
+            <li>Прием специалистов</li>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <main class="large-9 column">
+          <h1>Прием специалистов</h1>
+          <p>
+            Равным образом дальнейшее развитие различных форм деятельности
+            способствует подготовки и реализации форм развития. Задача
+            организации, в особенности же укрепление и развитие структуры
+            требуют от нас анализа дальнейших направлений развития.
+          </p>
+          <h2>У нас принимают специалисты:</h2>
+          <div class="js-second-carousel">
+            <div class="row specialist__card-list">
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="row specialist__card-list">
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="row specialist__card-list">
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="row specialist__card-list">
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="row specialist__card-list">
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+              <div class="medium-6 column">
+                <div class="specialist__card">
+                  <div class="specialist__card-title">
+                    Махмутов Динар Маратович
+                  </div>
+                  <div class="specialist__card-position">
+                    Стоматолог-терапевт
+                  </div>
+                  <div class="specialist__card-study">Доктор наук</div>
+                  <a class="specialist__card-study">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 columns">
+              <a class="button hollow u-plain">Все врачи</a>
+            </div>
+            <div class="large-6 columns">
+              <div class="specialist__arrows">
+                <div class="specialist__arrow js-second-carousel-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="17"
+                    height="28"
+                    viewbox="0 0 17 28"
+                  >
+                    <g transform="translate(-1320 -3713)">
+                      <path
+                        d="M1323.68 3727.5l11.11-11.3a.71.71 0 0 0 0-1 .69.69 0 0 0-.98 0l-11.6 11.8a.71.71 0 0 0 0 1l11.6 11.79a.67.67 0 0 0 .98 0 .71.71 0 0 0 0-1z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="specialist__arrow specialist__arrow_next js-second-carousel-next"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="17"
+                    height="28"
+                    viewbox="0 0 17 28"
+                  >
+                    <g transform="translate(-1320 -3713)">
+                      <path
+                        d="M1323.68 3727.5l11.11-11.3a.71.71 0 0 0 0-1 .69.69 0 0 0-.98 0l-11.6 11.8a.71.71 0 0 0 0 1l11.6 11.79a.67.67 0 0 0 .98 0 .71.71 0 0 0 0-1z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="page__inner-title">Прейскурант</h1>
+          <div class="price-table" id="price-table">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+                <tr>
+                  <td>Аллерголог</td>
+                  <td class="text-right"><strong>от 1500 руб.</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="price-table__arrow" data-table-expand="price-table">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="17"
+                height="28"
+                viewbox="0 0 17 28"
+              >
+                <g transform="translate(-1320 -3713)">
+                  <path
+                    d="M1323.68 3727.5l11.11-11.3a.71.71 0 0 0 0-1 .69.69 0 0 0-.98 0l-11.6 11.8a.71.71 0 0 0 0 1l11.6 11.79a.67.67 0 0 0 .98 0 .71.71 0 0 0 0-1z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <h1 class="page__inner-title">Что лечит эндокринолог</h1>
+          <ul class="tabs" id="tabs" data-tabs="">
+            <li class="tabs-title is-active">
+              <a href="#panel1" aria-selected="true">Что лечит эндокринолог</a>
+            </li>
+            <li class="tabs-title">
+              <a data-tabs-target="panel2" href="#panel2"
+                >Прием эндокринолога</a
+              >
+            </li>
+            <li class="tabs-title">
+              <a href="#panel3" aria-selected="true">Лечение</a>
+            </li>
+            <li class="tabs-title">
+              <a data-tabs-target="panel4" href="#panel2">Тревожные симптомы</a>
+            </li>
+          </ul>
+          <div class="tabs-content" data-tabs-content="tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <p>Врач-эндокринолог лечит:</p>
+              <ul class="styled-list">
+                <li>
+                  Заболевания щитовидной железы (диффузный зоб, гипотиреоз,
+                  тиреоидит и др.)и паращитовидных желез;
+                </li>
+                <li>
+                  Избыточную массу тела, ожирение и метаболический синдром
+                  (совместно с диетологом);
+                </li>
+                <li>
+                  Возрастной андрогенный дефицит у мужчин (совместно с
+                  урологами);
+                </li>
+                <li>Акромегалию;</li>
+                <li>Гиперпролактинемию;</li>
+                <li>
+                  Синдром гиперандрогении у женщин (совместно с гинекологами);
+                </li>
+                <li>Несахарный диабет;</li>
+                <li>Болезни надпочечников.</li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel2">
+              <p>Врач-эндокринолог лечит:</p>
+              <ul class="styled-list">
+                <li>
+                  Заболевания щитовидной железы (диффузный зоб, гипотиреоз,
+                  тиреоидит и др.)и паращитовидных желез;
+                </li>
+                <li>
+                  Избыточную массу тела, ожирение и метаболический синдром
+                  (совместно с диетологом);
+                </li>
+                <li>
+                  Возрастной андрогенный дефицит у мужчин (совместно с
+                  урологами);
+                </li>
+                <li>Акромегалию;</li>
+                <li>Гиперпролактинемию;</li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel3">
+              <p>Врач-эндокринолог лечит:</p>
+              <ul class="styled-list">
+                <li>Гиперпролактинемию;</li>
+                <li>
+                  Синдром гиперандрогении у женщин (совместно с гинекологами);
+                </li>
+                <li>Несахарный диабет;</li>
+                <li>Болезни надпочечников.</li>
+              </ul>
+            </div>
+            <div class="tabs-panel" id="panel4">
+              <p>Врач-эндокринолог лечит:</p>
+              <ul class="styled-list">
+                <li>
+                  Заболевания щитовидной железы (диффузный зоб, гипотиреоз,
+                  тиреоидит и др.)и паращитовидных желез;
+                </li>
+                <li>
+                  Избыточную массу тела, ожирение и метаболический синдром
+                  (совместно с диетологом);
+                </li>
+                <li>
+                  Возрастной андрогенный дефицит у мужчин (совместно с
+                  урологами);
+                </li>
+                <li>Акромегалию;</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <aside class="large-3 column">
+          <div class="specialist__aside">
+            <div class="specialist__aside-title">Услуги медэксперт</div>
+            <ul
+              class="tabs specialist__aside-tabs"
+              id="aside-tabs"
+              data-tabs=""
+            >
+              <li class="tabs-title specialist__aside-tab is-active">
+                <a href="#aside_panel1" aria-selected="true"
+                  ><img
+                    src="https://gazizzz.github.io/MedExpert/images/services/1.png"
+                    alt="Для взрослых"
+                /></a>
+              </li>
+              <li class="tabs-title specialist__aside-tab">
+                <a data-tabs-target="aside_panel2" href="#aside_panel2"
+                  ><img
+                    src="https://gazizzz.github.io/MedExpert/images/services/2.png"
+                    alt="Для детей"
+                /></a>
+              </li>
+              <li class="tabs-title specialist__aside-tab">
+                <a data-tabs-target="aside_panel3" href="#aside_panel3"
+                  ><img
+                    src="https://gazizzz.github.io/MedExpert/images/services/3.png"
+                    alt="Комплексные программы"
+                /></a>
+              </li>
+            </ul>
+            <div class="specialist__aside-body">
+              <div class="specialist__aside-body-title">Приём специалистов</div>
+              <div data-tabs-content="aside-tabs">
+                <ul
+                  class="tabs-panel specialist__aside-list no-bullet is-active"
+                  id="aside_panel1"
+                >
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="tabs-panel specialist__aside-list no-bullet"
+                  id="aside_panel2"
+                >
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования2</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="tabs-panel specialist__aside-list no-bullet"
+                  id="aside_panel3"
+                >
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                  <li class="specialist__aside-item">
+                    <a class="specialist__aside-link"
+                      >Лабораторные исследования3</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section section_call">
+      <div class="row">
+        <div class="large-offset-8 large-4 column">
+          <h1 class="section__title">Записаться на прием</h1>
+          <form>
+            <input type="text" placeholder="Ваше имя" />
+            <input type="tel" placeholder="Телефон" />
+            <button class="button large expanded" type="submit">
+              Записаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="row">
+        <div class="large-8 column">
+          <ul class="address-list no-bullet">
+            <li class="address-list__item">
+              <a class="footer__link" href="/">Поликлиника Муштари, 12А</a>
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Поликлиника Сибгата Хакима, 52</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Детская поликлиника Сибгата Хакима, 50</a
+              >
+            </li>
+            <li class="address-list__item">
+              <a class="footer__link" href="/"
+                >Клиника Дружковых (Маммологический центр)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="large-4 column footer__call">
+          <a class="footer__link link-tel" href="tel:+78435903333"
+            >+7(843) 590-33-33</a
+          >
+          <div><a class="footer__link" href="/">Обратная звязь</a></div>
+        </div>
+      </div>
+      <nav class="nav footer__nav">
+        <div class="row">
+          <div class="column">
+            <ul class="nav__list no-bullet">
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Услуги и цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">О клинике</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Расписание врачей</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/"
+                  >Акции и Новости</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link footer__nav-link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row footer__info">
+        <div class="column text-center">
+          <p class="footer__desc">
+            Внимание! Информация, размещённая на данном сайте, ни в коем случае
+            не должна использоваться читателями для самостоятельной постановки
+            диагноза или самолечения! Информация на сайте размещена
+            исключительно в целях исполнения обязанностей, предусмотренных
+            Федеральным законом «О защите прав потребителя» и не является
+            рекламой. Правовая информация. Любое использование (копирование)
+            информации с данного сайта возможно только с разрешения
+            правообладателя, полученного в письменном виде.
+          </p>
+          <p class="u-plain">
+            Разработка и продвижение сайтов&nbsp;<a
+              class="footer__link footer__site"
+              href="/"
+              >aaccent</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="reveal" id="call-modal" data-reveal="">
+      <h1 class="section__title">Записаться на прием</h1>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="tel" placeholder="Телефон" />
+        <button class="button large expanded" type="submit">Записаться</button>
+      </form>
+      <button
+        class="close-button"
+        data-close=""
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.css"
+    />
+    <script src="https://gazizzz.github.io/MedExpert/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://gazizzz.github.io/MedExpert/vendors/fontfaceobserver/fontfaceobserver.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

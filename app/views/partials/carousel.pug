@@ -1,0 +1,20 @@
+section.carousel
+  .row
+    .column.js-carousel
+      each val in [1,2,3,4,5,6]
+        .carousel__item.js-carousel-item(style='background-image: url(https://gazizzz.github.io/MedExpert/images/carousel.png)')
+          h1.carousel__title
+            | Успейте защитить себя 
+            br
+            | от гриппа
+          .carousel__text Предварительный осмотр и вакцинация
+          .carousel__price
+            span.carousel__price-old 1250р.
+            | 500р.
+          .carousel__buttons
+            button.slick-arrow.slick-prev
+              span.slick-arrow__icon
+                include ../icons/arrow
+            button.slick-arrow.slick-next
+              span.slick-arrow__icon
+                include ../icons/arrow

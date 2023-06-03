@@ -1,0 +1,49 @@
+.contacts {
+  &__buttons {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    display: none;
+  }
+
+  &__body.is-active {
+    display: block;
+  }
+
+  &__map {
+    margin-bottom: 58px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 50%;
+    margin-bottom: 53px;
+  }
+
+  &__info-text {
+    margin-top: 13px;
+  }
+
+  &__icon-container {
+    min-width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 53px;
+  }
+
+  &__info-tel {
+    border: 0;
+  }
+
+  &__info-list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

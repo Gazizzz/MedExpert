@@ -1,0 +1,33 @@
+.header-nav {
+  background: $white;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin-right: 40px;
+    border: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    flex: 1;
+  }
+
+  &__actions-icon {
+    margin-right: 11px;
+  }
+
+  &__actions-link {
+    border-bottom: 1px dashed #000;
+  }
+}

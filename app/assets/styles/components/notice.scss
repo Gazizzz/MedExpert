@@ -1,0 +1,14 @@
+.notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  box-shadow: 1px 5px 25px rgba(124, 209, 248, 0.5);
+  background-color: $white;
+  border-radius: 70px;
+  color: $blue;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3;
+}
